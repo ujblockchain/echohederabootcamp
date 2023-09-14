@@ -1,4 +1,5 @@
-url <- "https://blockchain.uj.ac.za/static/images/main-logo.png"
+![UJBlockchain](https://blockchain.uj.ac.za/static/images/main-logo.png)
+
 
 # SARCHI
 South Africa-Switzerland Bilateral Research Chair in Blockchain Technology aims to explore blockchain integrations with real-world applications and development in Agric food.
