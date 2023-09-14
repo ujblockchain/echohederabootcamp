@@ -60,17 +60,15 @@
                 <div class='tuna-signup-left col-md-4 col-sm-4'>
                     <img class='tuna-signup-logo' src='/static/images/logo.png' alt="logo" style="width: 200px;" />
                     <p>A Blockchained Powered Application</p>
-                    <p class="tuna-trial">Verify Food Safety with ease</p>
+                    <p class="tuna-trial">Verify GoFood Record with ease</p>
                     <hr />
                     <div class="tuna-slider-container">
                         <ul class="tuna-slider">
                             <li class='tuna-signup-testimonial'>
                                 <i class="icon icon-quill"></i>
-                                <p>View Blockchain Transaction </p>
+                                <p>Contract ID </p>
                                 <img src='/static/images/bird.png' alt="" />
-                                <b>Click<span>‒ <a href="#." target="_blank">here</a> </span></b>
-                                <p>View Tracking ID Receipt </p>
-                                <b>Click <span>‒ <a href="#." target="_blank">here</a> </span></b>
+                                <b>#-<span> <a href="#." target="_blank">{{.contract_id}}</a> </span></b>
                             </li>
 
                         </ul>
@@ -93,37 +91,33 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="control-label col-md-4">Corn Color</div>
+                                    <div class="control-label col-md-4">Transaction Gas Used</div>
                                     <div class="col-md-8">
                                         <div class="input-container">
                                             <input type="text" autocomplete="off" spellcheck="false"
-                                                class="form-control" value="{{.color}}" disabled />
+                                                class="form-control" value="{{ .gas_used }}" disabled />
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <div class="control-label col-md-4">Quantity</div>
+                                    <div class="control-label col-md-4">Transaction Fee</div>
                                     <div class="col-md-8">
                                         <div class="input-container">
                                             <input type="text" autocomplete="off" spellcheck="false"
-                                                class="form-control" value="{{.quantity}}" disabled />
+                                                class="form-control" value="{{ .transaction_fee }}" disabled />
                                         </div>
                                     </div>
                                 </div>
-                            
                                 <div class="form-group">
-                                    <div class="control-label col-md-4">Product Timestamp</div>
+                                    <div class="control-label col-md-4">Payer Account</div>
                                     <div class="col-md-8">
                                         <div class="input-container">
                                             <input type="text" autocomplete="off" spellcheck="false"
-                                                class="form-control" value="{{ .timestamp }}" disabled />
+                                                class="form-control" value="{{ .payer_account }}" disabled />
                                         </div>
                                     </div>
                                 </div>
-
                             </form>
-
-
                         </div>
 
                     </div>
