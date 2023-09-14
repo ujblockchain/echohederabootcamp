@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin-ext"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/jquery.bxslider.min.css" />
+    <link rel="stylesheet" href="/static/css/font.css" />
+    <link rel="stylesheet" href="/static/css/uniform-default.css" />
+    <link rel="stylesheet" href="/static/css/bootstrap-select.css" />
+    <link rel="stylesheet" href="/static/css/sweetalert.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        .tuna-signup-right {
+            padding: 80px -40px 0 0;
+        }
+
+        .form-control {
+            margin-bottom: 30px;
+        }
+
+        .tuna-signup-testimonial b span {
+            display: inline;
+        }
+
+        .tuna-signup-testimonial b span a {
+            font-size: 15px;
+            color: #f55661;
+            display: inline;
+            font-weight: bolder;
+            margin-top: 3px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="tuna-loader-container">
+        <div class="tuna-loader"></div>
+    </div>
+
+    <div class='tuna-signup-container'>
+        <div class='container'>
+            <div class="row">
+                <div class='tuna-signup-left col-md-4 col-sm-4'>
+                    <img class='tuna-signup-logo' src='/static/images/logo.png' alt="logo" style="width: 200px;" />
+                    <p>A Blockchained Powered Application</p>
+                    <p class="tuna-trial">Verify Food Safety with ease</p>
+                    <hr />
+                    <div class="tuna-slider-container">
+                        <ul class="tuna-slider">
+                            <li class='tuna-signup-testimonial'>
+                                <i class="icon icon-quill"></i>
+                                <p>View Blockchain Transaction </p>
+                                <img src='/static/images/bird.png' alt="" />
+                                <b>Click<span>‒ <a href="#." target="_blank">here</a> </span></b>
+                                <p>View Tracking ID Receipt </p>
+                                <b>Click <span>‒ <a href="#." target="_blank">here</a> </span></b>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class='tuna-signup-right col-md-8 col-sm-8 '>
+
+                    <div class="tuna-steps">
+                        <div class="">
+
+                            <form method="post" action="/record" name='signupForm' autocomplete="off" id="signupForm"
+                                class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="control-label col-md-4">Product ID</div>
+                                    <div class="col-md-8">
+                                        <div class="input-container">
+                                            <input type="text" autocomplete="off" spellcheck="false"
+                                                class="form-control" value="{{ .product_id }}" disabled />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="control-label col-md-4">Corn Color</div>
+                                    <div class="col-md-8">
+                                        <div class="input-container">
+                                            <input type="text" autocomplete="off" spellcheck="false"
+                                                class="form-control" value="{{.color}}" disabled />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="control-label col-md-4">Quantity</div>
+                                    <div class="col-md-8">
+                                        <div class="input-container">
+                                            <input type="text" autocomplete="off" spellcheck="false"
+                                                class="form-control" value="{{.quantity}}" disabled />
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div class="form-group">
+                                    <div class="control-label col-md-4">Product Timestamp</div>
+                                    <div class="col-md-8">
+                                        <div class="input-container">
+                                            <input type="text" autocomplete="off" spellcheck="false"
+                                                class="form-control" value="{{ .timestamp }}" disabled />
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="/static/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.bxslider.min.js"></script>
+        <script type="text/javascript" src="/static/js/jquery.uniform.min.js"></script>
+        <script type="text/javascript" src="/static/js/bootstrap-select.min.js"></script>
+        <script type="text/javascript" src="/static/js/sweetalert.min.js"></script>
+        <script type="text/javascript" src="/static/js/main.js"></script>
+
+</body>
+
+</html>
