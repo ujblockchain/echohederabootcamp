@@ -9,7 +9,7 @@ Create Hedera testnet account from https://portal.hedera.com/register. Replace "
 
 ```
 #database 
-DNS : "..." //
+DNS : "..." 
 
 #Hedera 
 ACCOUNT_ID: ...
