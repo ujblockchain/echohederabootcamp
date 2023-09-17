@@ -40,7 +40,7 @@ func GetClient() (*hedera.Client, error) {
 	}
 
 	// Retrieving private key from environment variable in development.yaml
-	operatorKey, err := hedera.PrivateKeyFromString(env.GetString("PRIVATE_KEY"))
+	operatorKey, err := hedera.PrivateKeyFromString(env.GetString("DER_ENCODED_PRIVATE_KEY"))
 	if err != nil {
 		println(err.Error(), ": error converting string to PrivateKey")
 
