@@ -7,14 +7,14 @@ South Africa-Switzerland Bilateral Research Chair in Blockchain Technology aims 
 ## Database
 Set environment variable for postgres database using Viper. Database connection is needed for Gorm. Replace "..." with your credentials.
 
-`
+```
 DNS: "host=localhost user=postgres password=... dbname=... port=... sslmode=disable TimeZone=Africa/Johannesburg"
-`
+```
 
 ## Create Testnet account
 Create Hedera testnet account from https://portal.hedera.com/register. Replace "..." in development.yaml with your own details. 
 
-`
+```
 ACCOUNT_ID: ...
 DER_ENCODED_PUBLIC_KEY: ...
 DER_ENCODED_PRIVATE_KEY: ...
